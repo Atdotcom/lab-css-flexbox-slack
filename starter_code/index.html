@@ -10,6 +10,7 @@
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
 
   <!-- link your styles -->
+  <link rel="stylesheet" href="./stylesheets/reset.css" />
   <link rel="stylesheet" href="./stylesheets/style.css" />
 
   <link rel="icon" type="image/x-icon" href="./images/slack-icon.png">
@@ -19,9 +20,9 @@
 <body>
   <nav>
     <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+      <img src="./images/slack-logo.png" alt="Slack logo"  id="slack-logo"/>
 
-      <ul>
+      <ul class="nav-link">
         <li>
           <a href="#">Product</a>
         </li>
@@ -38,11 +39,11 @@
     </div>
 
     <div>
-      <button>
+      <button class="icon">
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button class="icon">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
@@ -58,33 +59,33 @@
   </nav>
 
   <header>
-    <div>
+    <div class="header">
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p id="header-p"><span id="p-yellow">Slack is free to try </span>for as long as you'd like.</p>
 
-      <div>
-        <button>Sign up with email</button>
+      <div class="buttons">
+        <button id="email">Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+        <button id="google">
+          <img src="./images/logo-google.png" alt="Google logo" id="gologo" />
+          <span id="spamGo">Sign up with Google</span>
         </button>
       </div>
 
     </div>
 
-    <div>
+    <div class="slackApp">
       <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
-  <main>
+  <main class="maincolor">
     <section>
-      <p>Trusted by companies all over the world</p>
+      <p id="textComp">Trusted by companies all over the world</p>
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
+      <div class="logos">
+        <img src="./images/logo-airbnb.png" alt="Airbnb logo" id="logo1"/>
         <img src="./images/logo-nasa.png" alt="NASA logo" />
         <img src="./images/logo-uber.png" alt="Uber logo" />
         <img src="./images/logo-target.png" alt="Target logo" />
